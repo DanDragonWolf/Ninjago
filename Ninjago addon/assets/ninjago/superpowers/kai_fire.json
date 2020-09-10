@@ -1,6 +1,6 @@
 {
 	"name" : {
-		"text": "Addon Pack Power"
+		"text": "Fire Element"
 	},
 
 	"icon": {
@@ -14,7 +14,13 @@
 	
 	"abilities": [
 
+	"Spin": {
+		"ability": "
+	},
 	"Spinjutsu": {
 		"ability": "lucraftcore:command_loop",
-	}
+		
+	},
+	"Fire Punch": {
+		"ability": "
 }
