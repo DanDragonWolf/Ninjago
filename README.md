@@ -1,2 +1,2 @@
-# Heroverse
-Super Hero addon for Lucraft Core
+# Ninjago
+Lego Ninjago addon for Lucraft Core
