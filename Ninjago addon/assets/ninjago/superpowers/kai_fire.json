@@ -14,12 +14,14 @@
 	
 	"abilities": [
 
-	"Spin": {
+	"spin": {
 		"ability": "
+		"hidden": true
 	},
 	"Spinjutsu": {
 		"ability": "lucraftcore:command_loop",
-		
+		"parent_ability": "
+		"id": "spin"
 	},
 	"Fire Punch": {
 		"ability": "
