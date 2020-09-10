@@ -1,0 +1,20 @@
+{
+	"name" : {
+		"text": "Addon Pack Power"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": "addonpack:textures/icons/icon.png"
+	},
+	
+	"max_level": 10,
+	
+	"capsule_color" : 16711680,
+	
+	"abilities": [
+
+	"Spinjutsu": {
+		"ability": "lucraftcore:command_loop",
+	}
+}
