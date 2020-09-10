@@ -15,14 +15,16 @@
 	"abilities": [
 
 	"spin": {
-		"ability": "
+		"ability": "heroesexpansion:force_field",
 		"hidden": true
 	},
 	"Spinjutsu": {
 		"ability": "lucraftcore:command_loop",
-		"parent_ability": "
-		"id": "spin"
+		"parent_ability": "heroesexpansion:force_field"
+		"id": "spin",
+		"title": {"text":"Spinjutsu"},
+		"commands": ["particle hugeexplosion ~ ~ ~ 1 1 1 1]
 	},
 	"Fire Punch": {
-		"ability": "
+		"ability": "lucraftcore:fire_punch"
 }
