@@ -40,10 +40,32 @@
 	},
 	"Fire": {
 		"ability": "lucraftcore:toggle_power",
-		"title": {"text": "Fire toggle"}
+		"title": {"text": "Fire toggle"},
+		"bar_color": "red"
 	},
 	"Fire Punch": {
 		"ability": "lucraftcore:fire_punch"
+		"bar_color": "red",
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Fire"
+			}
+		]
+	},
+	"Fire Vision": {
+		"ability": "heroesexpansion:heat_vision",
+		"bar_color": "red",
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Fire"
+			}
+		]
+	},
+	"Fire Beam": {
+		"ability": "heroesexpansion:photon_beam",
+		"bar_color": "red",
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
