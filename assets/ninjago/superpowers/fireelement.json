@@ -23,6 +23,7 @@
 		"speed": 0.1,
 		"sprint_speed": 0.2,
 		"title": {"text": "Airjutsu"}
+	},
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
 		"max_energy": 100,
