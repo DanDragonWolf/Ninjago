@@ -5,9 +5,9 @@
 
 	"icon": {
 		"type": "texture",
-		"texture": "ninjago:textures/icons/icon.png"
+		"texture": "ninjago:textures/icons/fire.png"
 	},
-	
+
 	"max_level": 10,
 	
 	"capsule_color" : 16711680,
@@ -28,7 +28,7 @@
 			}
 		]
 	},
-	"Spinjutsueffect": {
+	"Spinjutsu effect": {
 		"ability": "lucraftcore:command_loop",
 		"commands": ["particle sweepAttack ~ ~2 ~ 1 1 1 1 5],
 		"conditions": [
@@ -38,8 +38,18 @@
 			}
 		]
 	},
+	"Fire": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Fire toggle"}
+	},
 	"Fire Punch": {
 		"ability": "lucraftcore:fire_punch"
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Fire"
+			}
+		]
 	}
     }
 }
