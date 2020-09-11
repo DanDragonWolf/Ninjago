@@ -37,7 +37,7 @@
 	},
 	"Spinjutsu effect": {
 		"ability": "lucraftcore:command_loop",
-		"commands": ["particle sweepAttack ~ ~2 ~ 1 1 1 1 5],
+		"commands": ["particle sweepAttack ~ ~2 ~ 1 1 1 1 5"],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
