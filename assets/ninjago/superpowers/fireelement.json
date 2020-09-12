@@ -81,7 +81,7 @@
 		]
 	},
 	"Fire Beam": {
-		"ability": "heroesexpansion:photon_beam",
+		"ability": "heroesexpansion:photon_blast",
 		"bar_color": "red",
 		"conditions": [
 			{
