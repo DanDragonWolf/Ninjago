@@ -1,0 +1,96 @@
+{
+	"name" : {
+		"text": "Golden Power"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": "ninjago:textures/icons/golden.png"
+	},
+
+	"max_level": 10,
+	
+	"capsule_color" : 16766720,
+
+	"effects": [
+	{
+		"type": "glow",
+		"color": [1, 0.8431372549, 0]
+
+	
+	"abilities": {
+
+	"Strength": {
+		"ability": "lucraftcore:strength",
+		"amount": 9001.0
+	},
+	"Spinjutsu": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Spinjutsu"}
+	},
+	"Airjutsu": {
+		"ability": "lucraftcore:flight",
+		"speed": 0.5,
+		"sprint_speed": 1.0,
+		"title": {"text": "Airjutsu"},
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spin": {
+		"ability": "heroesexpansion:kinetic_energy_absorption",
+		"max_energy": 100,
+		"color": [255, 215, 0],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spinjutsu effect": {
+		"ability": "lucraftcore:command_loop",
+		"commands": ["particle happyVillager ~ ~1 ~ 0.25 0.5 0.25 1 20"],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Gold": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Golden Toggle"},
+		"bar_color": "yellow"
+	},
+	"Golden Blast": {
+		"ability": "lucraftcore:energy_blast",
+		"bar_color": "yellow",
+		"color": [255, 215, 0],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Gold"
+			}
+		]
+	},
+	"Golden Beam": {
+		"ability": "heroesexpansion:photon_blast",
+		"bar_color": "yellow",
+		"color": [255, 215, 0],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Gold"
+			}
+		]
+	},
+	"Energy Essence": {
+		"ability": "lucraftcore:command",
+		"commands": ["superpower @s ninjago:energyelementalessence"]
+	}
+    }
+}

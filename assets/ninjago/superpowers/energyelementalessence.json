@@ -1,0 +1,75 @@
+{
+	"name" : {
+		"text": "Energy Essence"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": "ninjago:textures/icons/energy.png"
+	},
+
+	"max_level": 10,
+	
+	"capsule_color" : 65280,
+	
+	"abilities": {
+
+	"Spinjutsu": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Spinjutsu"}
+	},
+	"Airjutsu": {
+		"ability": "lucraftcore:flight",
+		"speed": 0.5,
+		"sprint_speed": 1.0,
+		"title": {"text": "Airjutsu"},
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spin": {
+		"ability": "heroesexpansion:kinetic_energy_absorption",
+		"max_energy": 100,
+		"color": [0, 255, 0],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spinjutsu effect": {
+		"ability": "lucraftcore:command_loop",
+		"commands": ["particle happyVillager ~ ~1 ~ 0.25 0.5 0.25 1 20"],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Energy": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Energy Toggle"},
+		"bar_color": "green"
+	},
+	"Energy Shield": {
+		"ability": "heroesexpansion:force_field",
+		"color": [0, 255, 0],
+		"bar_color": "green",
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Energy"
+			}
+		]
+	},
+	"Golden Power": {
+		"ability": "lucraftcore:command",
+		"commands": ["superpower @s ninjago:goldenpoweressence"]
+	}
+    }
+}
