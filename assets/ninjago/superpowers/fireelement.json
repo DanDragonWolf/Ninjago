@@ -22,7 +22,13 @@
 		"ability": "lucraftcore:flight",
 		"speed": 0.1,
 		"sprint_speed": 0.2,
-		"title": {"text": "Airjutsu"}
+		"title": {"text": "Airjutsu"},
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
 	},
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
@@ -51,7 +57,7 @@
 		"bar_color": "red"
 	},
 	"Fire Punch": {
-		"ability": "lucraftcore:fire_punch"
+		"ability": "lucraftcore:fire_punch",
 		"bar_color": "red",
 		"conditions": [
 			{
