@@ -1,1 +1,84 @@
 
+{
+	"name" : {
+		"text": "Ice Element"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": "ninjago:textures/icons/ice.png"
+	},
+
+	"max_level": 10,
+	
+	"capsule_color" : 16711680,
+	
+	"abilities": {
+
+	"Spinjutsu": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Spinjutsu"}
+	},
+	"Airjutsu": {
+		"ability": "lucraftcore:flight",
+		"speed": 0.5,
+		"sprint_speed": 1.0,
+		"title": {"text": "Airjutsu"},
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spin": {
+		"ability": "heroesexpansion:kinetic_energy_absorption",
+		"max_energy": 100,
+		"color": [0, 0, 255],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Spinjutsu effect": {
+		"ability": "lucraftcore:command_loop",
+		"commands": ["particle snowballpoof ~ ~1 ~ 0.25 0.75 0.25 1 100"],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Spinjutsu"
+			}
+		]
+	},
+	"Ice": {
+		"ability": "lucraftcore:toggle_power",
+		"title": {"text": "Ice toggle"},
+		"bar_color": "blue"
+	},
+	"Ice Punch": {
+		"ability": "lucraftcore:potion_punch",
+		"potion": "minecraft:slowness",
+		"amplifier": 255,
+		"duration": 30,
+		"bar_color": "blue",
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Ice"
+			}
+		]
+	},
+	"Ice Breath": {
+		"ability": "heroesexpansion:freeze_breath",
+		"bar_color": "blue",
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Ice"
+			}
+		]
+	}
+    }
+}
