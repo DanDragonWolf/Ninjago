@@ -43,7 +43,7 @@
 	},
 	"Spinjutsu effect": {
 		"ability": "lucraftcore:command_loop",
-		"commands": ["particle sweepAttack ~ ~2 ~ 1 1 1 1 5"],
+		"commands": ["particle dripLava ~ ~1 ~ 0.25 0.5 0.25 1 100"],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
@@ -58,16 +58,6 @@
 	},
 	"Fire Punch": {
 		"ability": "lucraftcore:fire_punch",
-		"bar_color": "red",
-		"conditions": [
-			{
-				"type": "lucraftcore:ability",
-				"ability": "Fire"
-			}
-		]
-	},
-	"Fire Vision": {
-		"ability": "heroesexpansion:heat_vision",
 		"bar_color": "red",
 		"conditions": [
 			{
