@@ -9,9 +9,23 @@
 	},
 
 	"max_level": 10,
-	
+
 	"capsule_color" : 16711680,
-	
+
+	"effects": [
+		{
+			"type": "glowing_hand",
+			"color": [0, 1, 0],
+			"size": 1,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Fire"
+				}
+			]
+		}
+	],
+
 	"abilities": {
 
 	"Spinjutsu": {
@@ -20,8 +34,8 @@
 	},
 	"Airjutsu": {
 		"ability": "lucraftcore:flight",
-		"speed": 0.1,
-		"sprint_speed": 0.2,
+		"speed": 0.5,
+		"sprint_speed": 1.0,
 		"title": {"text": "Airjutsu"},
 		"conditions": [
 			{
