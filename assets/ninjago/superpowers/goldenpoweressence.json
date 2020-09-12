@@ -13,10 +13,11 @@
 	"capsule_color" : 16766720,
 
 	"effects": [
-	{
-		"type": "glow",
-		"color": [1, 0.8431372549, 0]
-	}
+		{
+			"type": "glow",
+			"color": [1, 0.8431372549, 0]
+		}
+	]
 	
 	"abilities": {
 
