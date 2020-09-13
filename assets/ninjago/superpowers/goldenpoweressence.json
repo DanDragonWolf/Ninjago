@@ -4,8 +4,11 @@
 	},
 
 	"icon": {
-		"type": "texture",
-		"texture": "ninjago:textures/icons/golden.png"
+		"type": "icon",
+		"item": {
+			"item": "minecraft:gold_ingot",
+			"data": 0
+		}
 	},
 
 	"max_level": 10,
