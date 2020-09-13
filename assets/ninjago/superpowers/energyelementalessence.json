@@ -4,8 +4,11 @@
 	},
 
 	"icon": {
-		"type": "texture",
-		"texture": "ninjago:textures/icons/energy.png"
+		"type": "icon",
+		"item": {
+			"item": "minecraft:emerald",
+			"data": 0
+		}
 	},
 
 	"max_level": 10,
@@ -33,6 +36,7 @@
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
 		"max_energy": 100,
+		"title": {"text": "Spin Attack"},
 		"color": [0, 255, 0],
 		"conditions": [
 			{
@@ -69,7 +73,8 @@
 	},
 	"Golden Power": {
 		"ability": "lucraftcore:command",
-		"commands": ["superpower @s ninjago:goldenpoweressence"]
+		"commands": ["superpower @s ninjago:goldenpoweressence"],
+		"icon": { "type": "icon", "item": { "item": "minecraft:gold_ingot", "data": 0} }
 	}
     }
 }
