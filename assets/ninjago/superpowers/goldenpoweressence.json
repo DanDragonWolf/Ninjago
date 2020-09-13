@@ -46,6 +46,7 @@
 	},
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
+		"title": {"text": "Spin Attack"},
 		"max_energy": 100,
 		"color": [255, 215, 0],
 		"conditions": [
@@ -72,6 +73,7 @@
 	},
 	"Golden Blast": {
 		"ability": "lucraftcore:energy_blast",
+		"title": {"text": "Golden Blast"},
 		"bar_color": "yellow",
 		"color": [255, 215, 0],
 		"conditions": [
@@ -83,6 +85,7 @@
 	},
 	"Golden Beam": {
 		"ability": "heroesexpansion:photon_blast",
+		"title": {"text": "Golden Beam"},
 		"bar_color": "yellow",
 		"color": [255, 215, 0],
 		"conditions": [
@@ -94,7 +97,9 @@
 	},
 	"Energy Essence": {
 		"ability": "lucraftcore:command",
-		"commands": ["superpower @s ninjago:energyelementalessence"]
+		"title": {"text": "Energy Essence"},
+		"commands": ["superpower @s ninjago:energyelementalessence"],
+		"icon": { "type": "icon", "item": { "item": "minecraft:emerald", "data": 0} }
 	}
     }
 }
