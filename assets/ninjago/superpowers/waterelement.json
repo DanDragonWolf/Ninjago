@@ -1,17 +1,16 @@
 {
 	"name" : {
-		"text": "Energy Essence"
+		"text": "Water Element"
 	},
-
 
 	"icon": {
 		"type": "texture",
-		"texture": "minecraft:textures/items/emerald.png"
+		"texture": "minecraft:textures/items/water_bucket.png"
 	},
 
 	"max_level": 10,
 	
-	"capsule_color" : 65280,
+	"capsule_color" : 11393254,
 	
 	"abilities": {
 
@@ -33,8 +32,9 @@
 	},
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
+		"title": {"text": "Spin Attack"},
 		"max_energy": 100,
-		"color": [0, 255, 0],
+		"color": [173, 216, 230],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
@@ -44,7 +44,7 @@
 	},
 	"Spinjutsu effect": {
 		"ability": "lucraftcore:command_loop",
-		"commands": ["particle happyVillager ~ ~1 ~ 0.25 0.5 0.25 1 20"],
+		"commands": ["/particle splash ~ ~1 ~ 0.25 0.5 0.25 1 500"],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
@@ -52,35 +52,45 @@
 			}
 		]
 	},
-	"Energy": {
+	"Water": {
 		"ability": "lucraftcore:toggle_power",
-		"title": {"text": "Energy Toggle"},
-		"bar_color": "green",
+		"title": {"text": "Water toggle"},
+		"bar_color": "light_blue",
 		"icon": {
 			"type": "texture",
-			"texture": "minecraft:textures/items/emerald.png"
+			"texture": "minecraft:textures/items/water_bucket.png"
 		}
 	},
-	"Energy Shield": {
+	"Water Walking": {
+		"ability": "speedsterheroes:water_running",
+		"title": {"text": "Water Walking"}
+	},
+	"Water Breathing": {
+		"ability": "lucraftcore:water_breathing"
+	},
+	"Water Shield": {
 		"ability": "heroesexpansion:force_field",
-		"title": {"text": "Energy Shield"},
-		"color": [0, 255, 0],
-		"bar_color": "green",
+		"title": {"text": "Water Shield"},
+		"bar_color": "light_blue",
+		"color": [173, 216, 230],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
-				"ability": "Energy"
+				"ability": "Water"
 			}
 		]
 	},
-	"Golden Power": {
-		"ability": "lucraftcore:command",
-		"commands": ["superpower @s ninjago:goldenpoweressence"],
-		"title": {"text": "Golden Power"},
-		"icon": {
-			"type": "texture",
-			"texture": "minecraft:textures/items/gold_ingot.png"
-		}
+	"Water Blast": {
+		"ability": "lucraftcore:energy_blast",
+		"title": {"text": "Water Blast"},
+		"bar_color": "light_blue",
+		"color": [173, 216, 230],
+		"conditions": [
+			{
+				"type": "lucraftcore:ability",
+				"ability": "Water"
+			}
+		]
 	}
     }
 }

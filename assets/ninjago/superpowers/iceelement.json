@@ -1,15 +1,11 @@
 {
 	"name" : {
 		"text": "Ice Element"
-		"type": "icon",
-		"item": {
-			"item": "minecraft:ice",
-			"data": 0
-		}
 	},
 
 	"icon": {
-
+		"type": "model",
+		"model": "minecraft:ice"
 	},
 
 	"max_level": 10,
@@ -37,8 +33,7 @@
 	"Spin": {
 		"ability": "heroesexpansion:kinetic_energy_absorption",
 		"max_energy": 100,
-		"color": [255, 255, 255],
-		"title": {"text": "Spin Attack"},
+		"color": [0, 0, 255],
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
@@ -59,15 +54,14 @@
 	"Ice": {
 		"ability": "lucraftcore:toggle_power",
 		"title": {"text": "Ice toggle"},
-		"bar_color": "white"
+		"bar_color": "blue"
 	},
 	"Ice Punch": {
 		"ability": "lucraftcore:potion_punch",
 		"potion": "minecraft:slowness",
 		"amplifier": 255,
 		"duration": 30,
-		"title": {"text": "Ice Punch"},
-		"bar_color": "white",
+		"bar_color": "blue",
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
@@ -77,8 +71,7 @@
 	},
 	"Ice Breath": {
 		"ability": "heroesexpansion:freeze_breath",
-		"title": {"text": "Ice Breath"},
-		"bar_color": "white",
+		"bar_color": "blue",
 		"conditions": [
 			{
 				"type": "lucraftcore:ability",
