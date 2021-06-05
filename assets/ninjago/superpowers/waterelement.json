@@ -44,7 +44,7 @@
 		},
 		"Spinjutsu effect": {
 			"ability": "lucraftcore:command_loop",
-			"commands": ["/particle splash ~ ~1 ~ 0.25 0.5 0.25 1 500"],
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0022"],
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -68,11 +68,15 @@
 		"Water Breathing": {
 			"ability": "lucraftcore:water_breathing"
 		},
-		"Water Shield": {
-			"ability": "heroesexpansion:force_field",
-			"title": {"text": "Water Shield"},
+		"Water Forcefield": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
 			"bar_color": "light_blue",
-			"color": [173, 216, 230],
+            "cooldown": 300,
+            "title": {"text":"Water Forcefield"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:forcefield @p"],
+            "hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -80,11 +84,15 @@
 				}
 			]
 		},
-		"Water Blast": {
-			"ability": "lucraftcore:energy_blast",
-			"title": {"text": "Water Blast"},
+		"Bubble Jet": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
 			"bar_color": "light_blue",
-			"color": [173, 216, 230],
+            "cooldown": 300,
+            "title": {"text":"Bubble Jet"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:bubble @p"],
+            "hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",

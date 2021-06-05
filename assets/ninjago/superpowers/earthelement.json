@@ -1,0 +1,76 @@
+{
+	"name" : {
+		"text": "Earth Element"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": ""
+	},
+
+	"max_level": 10,
+	
+	"capsule_color" : 654321,
+	
+	"abilities": {
+
+		"Spinjutsu": {
+			"ability": "lucraftcore:toggle_power",
+			"title": {"text": "Spinjutsu"}
+		},
+		"Airjutsu": {
+			"ability": "lucraftcore:flight",
+			"speed": 0.5,
+			"sprint_speed": 1.0,
+			"title": {"text": "Airjutsu"},
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Spin": {
+			"ability": "heroesexpansion:kinetic_energy_absorption",
+			"max_energy": 100,
+			"color": [101, 67, 33],
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Spinjutsu effect": {
+			"ability": "lucraftcore:command_loop",
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0003"],
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Earth": {
+			"ability": "lucraftcore:toggle_power",
+			"title": {"text": "Earth toggle"},
+			"bar_color": "brown"
+		},
+		"Earthquake":{
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
+			"bar_color": "brown",
+			"cooldown": 0,
+			"title": {"text":"Earthquake"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:earthquake @p"],
+			"hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Earth"
+				}
+			]
+		}
+    }
+}

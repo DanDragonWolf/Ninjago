@@ -7,7 +7,7 @@
 		"type": "texture",
 		"texture": "minecraft:textures/items/blaze_powder.png"
 	},
-
+	
 	"max_level": 10,
 	
 	"capsule_color" : 16711680,
@@ -43,7 +43,7 @@
 		},
 		"Spinjutsu effect": {
 			"ability": "lucraftcore:command_loop",
-			"commands": ["particle dripLava ~ ~1 ~ 0.25 0.5 0.25 1 100"],
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0249"],
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -60,9 +60,15 @@
 				"texture": "minecraft:textures/items/blaze_powder.png"
 			}
 		},
-		"Fire Punch": {
-			"ability": "lucraftcore:fire_punch",
+		"Ignite": {
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
 			"bar_color": "red",
+			"cooldown": 0,
+			"title": {"text":"Ignite"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:ignite @p"],
+			"hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -70,9 +76,15 @@
 				}
 			]
 		},
-		"Fire Vision": {
-			"ability": "heroesexpansion:heat_vision",
+		"Fireball": {
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
 			"bar_color": "red",
+			"cooldown": 30,
+			"title": {"text":"Fireball"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:fireball @p"],
+			"hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -80,10 +92,15 @@
 				}
 			]
 		},
-		"Fire Beam": {
-			"ability": "heroesexpansion:photon_blast",
+		"Flame Ray": {
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
 			"bar_color": "red",
-			"color": [255, 0, 0],
+			"cooldown": 30,
+			"title": {"text":"Flame Ray"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:flame_ray @p"],
+			"hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",

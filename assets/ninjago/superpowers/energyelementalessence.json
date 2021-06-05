@@ -44,7 +44,7 @@
 		},
 		"Spinjutsu effect": {
 			"ability": "lucraftcore:command_loop",
-			"commands": ["particle happyVillager ~ ~1 ~ 0.25 0.5 0.25 1 20"],
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0133"],
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -66,6 +66,38 @@
 			"title": {"text": "Energy Shield"},
 			"color": [0, 255, 0],
 			"bar_color": "green",
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Energy"
+				}
+			]
+		},
+		"Energy Ignite": {
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
+			"bar_color": "green",
+			"cooldown": 0,
+			"title": {"text":"Energy Ignite"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:ignite @p"],
+			"hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Energy"
+				}
+			]
+		},
+		"Energy Lightning": {
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
+			"bar_color": "green",
+			"cooldown": 300,
+			"title": {"text":"Energy Lightning"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:lightning_ray @p"],
+			"hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",

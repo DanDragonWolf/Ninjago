@@ -1,0 +1,129 @@
+{
+	"name" : {
+		"text": "Lightning Element"
+	},
+
+	"icon": {
+		"type": "texture",
+		"texture": ""
+	},
+
+	"max_level": 10,
+	
+	"capsule_color" : 8255999,
+	
+	"abilities": {
+
+		"Spinjutsu": {
+			"ability": "lucraftcore:toggle_power",
+			"title": {"text": "Spinjutsu"}
+		},
+		"Airjutsu": {
+			"ability": "lucraftcore:flight",
+			"speed": 0.5,
+			"sprint_speed": 1.0,
+			"title": {"text": "Airjutsu"},
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Spin": {
+			"ability": "heroesexpansion:kinetic_energy_absorption",
+			"title": {"text": "Spin Attack"},
+			"max_energy": 100,
+			"color": [125, 249, 255],
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Spinjutsu effect": {
+			"ability": "lucraftcore:command_loop",
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0057"],
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Spinjutsu"
+				}
+			]
+		},
+		"Lightning": {
+			"ability": "lucraftcore:toggle_power",
+			"title": {"text": "Lightning toggle"},
+			"bar_color": "blue",
+			"icon": {
+				"type": "texture",
+				"texture": ""
+			}
+		},
+		"Lightning Bolt": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
+			"bar_color": "blue",
+            "cooldown": 300,
+            "title": {"text":"Lightning Bolt"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:lightning_bolt @p"],
+            "hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Lightning"
+				}
+			]
+		},
+		"Lightning Breathing": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
+			"bar_color": "blue",
+            "cooldown": 300,
+            "title": {"text":"Lightning Forcefield"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:forcefield @p"],
+            "hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Lightning"
+				}
+			]
+		},
+		"Lightning Forcefield": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
+			"bar_color": "blue",
+            "cooldown": 300,
+            "title": {"text":"Lightning Forcefield"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:forcefield @p"],
+            "hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Lightning"
+				}
+			]
+		},
+		"Bubble Jet": {
+            "ability": "lucraftcore:command",
+            "show_in_bar": true,
+			"bar_color": "blue",
+            "cooldown": 300,
+            "title": {"text":"Bubble Jet"},
+            "icon": {"type": "texture", "texture": ""},
+            "commands": ["/cast ebwizardry:bubble @p"],
+            "hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Lightning"
+				}
+			]
+		}
+    }
+}

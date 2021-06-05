@@ -43,7 +43,7 @@
 		},
 		"Spinjutsu effect": {
 			"ability": "lucraftcore:command_loop",
-			"commands": ["particle snowballpoof ~ ~1 ~ 0.25 0.75 0.25 1 100"],
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0080"],
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -54,22 +54,44 @@
 		"Ice": {
 			"ability": "lucraftcore:toggle_power",
 			"title": {"text": "Ice toggle"},
-			"bar_color": "blue"
+			"bar_color": "white"
+		},
+		"Ice Shard":{
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
+			"bar_color": "white",
+			"cooldown": 0,
+			"title": {"text":"Ice Shard"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:ice_shard @p"],
+			"hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Ice"
+				}
+			]
 		},
 		"Ice Wall":{
 			"ability": "lucraftcore:command",
 			"show_in_bar": true,
-			"bar_color": "blue",
+			"bar_color": "white",
 			"cooldown": 0,
 			"title": {"text":"Ice Wall"},
 			"icon": {"type": "texture", "texture": ""},
 			"commands": ["/cast ebwizardry:wall_of_frost @p 5"],
-			"hidden": true
+			"hidden": true,
+			"conditions": [
+				{
+					"type": "lucraftcore:ability",
+					"ability": "Ice"
+				}
+			]
 		},
 		"Ice Age":{
             "ability": "lucraftcore:command",
             "show_in_bar": true,
-			"bar_color": "blue",
+			"bar_color": "white",
             "cooldown": 300,
             "title": {"text":"Ice Age"},
             "icon": {"type": "texture", "texture": ""},

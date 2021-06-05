@@ -54,7 +54,7 @@
 		},
 		"Spinjutsu effect": {
 			"ability": "lucraftcore:command_loop",
-			"commands": ["particle happyVillager ~ ~1 ~ 0.25 0.5 0.25 1 20"],
+			"commands": ["particle fallingdust ~ ~1 ~ 0.5 0.5 0.5 1 500 force @p 0041"],
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
@@ -83,9 +83,14 @@
 			]
 		},
 		"Golden Beam": {
-			"ability": "heroesexpansion:photon_blast",
+			"ability": "lucraftcore:command",
+			"show_in_bar": true,
 			"bar_color": "yellow",
-			"color": [255, 215, 0],
+			"cooldown": 300,
+			"title": {"text":"Golden Beam"},
+			"icon": {"type": "texture", "texture": ""},
+			"commands": ["/cast ebwizardry:ray_of_purification @p"],
+			"hidden": true,
 			"conditions": [
 				{
 					"type": "lucraftcore:ability",
